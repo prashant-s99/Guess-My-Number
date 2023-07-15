@@ -55,7 +55,7 @@ main {
 }
 
 .number {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   background: #eee;
   color: #333;
   font-size: 4rem;
@@ -98,9 +98,9 @@ main {
   border: 0.3rem solid #eee;
   font-family: inherit;
   color: inherit;
-  font-size: 5rem;
-  padding: 2.5rem;
-  width: 25rem;
+  font-size: 4rem;
+  padding: 1rem;
+  width: 15rem;
   text-align: center;
   display: block;
   margin-bottom: 3rem;
@@ -113,8 +113,9 @@ main {
   background-color: #eee;
   color: #222;
   font-size: 2rem;
+  width: 10rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   cursor: pointer;
   flex-direction: row;
 }
