@@ -72,3 +72,21 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.score').textContent = score;
   mainFunction;
 });
+
+const inputField = document.getElementsByClassName('guess')[0];
+
+inputField.addEventListener('blur', event => {
+  event.target.focus();
+});
+
+document.addEventListener('click', event => {
+  const clickedElement = event.target;
+
+  // Check if the clicked element is not the input field
+  if (clickedElement !== inputField) {
+    event.preventDefault();
+
+    // Focus the input field
+    inputField.focus();
+  }
+});
