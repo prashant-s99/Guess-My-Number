@@ -15,9 +15,11 @@
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 document.querySelector('.number').textContent = secretNumber;
 
-//Storing secret number in a variable which can be used.
-let score = Number(document.querySelector('.score').textContent);
+//Storing secret number in a variable which can be used later also.
+const scr = Number(document.querySelector('.score').textContent);
+let score = scr;
 
+//Main function which has all the conditions.
 let mainFunction = function () {
   let guess = Number(document.querySelector('.guess').value);
 
@@ -48,10 +50,17 @@ let mainFunction = function () {
   }
 };
 
+//Invoking main function when 'Check' button is clicked.
 document.querySelector('.check').addEventListener('click', mainFunction);
 
+//Will be invoked when 'Again' button is clicked.
 document.querySelector('.again').addEventListener('click', function () {
-  score = 5;
+  score = scr;
+  const guess = document.querySelector('.guess');
+  const clear = document.querySelector('.again');
+  clear.addEventListener('click', () => {
+    guess.value = '';
+  });
   document.querySelector('.message').textContent = 'Start guessing...';
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector('.number').textContent = secretNumber;
