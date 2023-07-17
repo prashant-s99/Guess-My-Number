@@ -151,8 +151,8 @@ main {
   }
   .number {
     font-size: 3rem;
-    height: 4rem;
-    width: 8rem;
+    height: 6rem;
+    width: 10rem;
     padding-top: 0.5rem;
   }
   .guess {
@@ -176,8 +176,8 @@ main {
   }
   .number {
     font-size: 2rem;
-    height: 3rem;
-    width: 6rem;
+    height: 5rem;
+    width: 8rem;
     padding-top: 0.3rem;
   }
   .guess {
@@ -201,8 +201,8 @@ main {
   }
   .number {
     font-size: 1rem;
-    height: 2rem;
-    width: 4rem;
+    height: 4rem;
+    width: 7rem;
     padding-top: 0.2rem;
   }
   .guess {
