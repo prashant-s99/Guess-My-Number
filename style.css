@@ -153,7 +153,7 @@ main {
     font-size: 3rem;
     height: 4rem;
     width: 8rem;
-    padding-top: 0.8rem;
+    padding-top: 0.5rem;
   }
   .guess {
     font-size: 3rem;
@@ -178,7 +178,7 @@ main {
     font-size: 2rem;
     height: 3rem;
     width: 6rem;
-    padding-top: 0.6rem;
+    padding-top: 0.3rem;
   }
   .guess {
     font-size: 2rem;
@@ -203,7 +203,7 @@ main {
     font-size: 1rem;
     height: 2rem;
     width: 4rem;
-    padding-top: 0.4rem;
+    padding-top: 0.2rem;
   }
   .guess {
     font-size: 1rem;
