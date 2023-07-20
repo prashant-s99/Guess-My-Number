@@ -73,7 +73,7 @@ document.querySelector('.again').addEventListener('click', function () {
   mainFunction;
 });
 
-//Function to lock focus on the input element('guess')
+//Function to lock focus on the input element('guess').
 const inputField = document.getElementsByClassName('guess')[0];
 
 inputField.addEventListener('blur', event => {
