@@ -12,8 +12,10 @@
 // console.log(document.querySelector(".guess").value);
 
 //Defining secret number
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
-// document.querySelector('.number').textContent = secretNumber
+let secNum =()=>{
+ return(Math.trunc(Math.random() * 20) + 1);
+}
+let secretNumber=secNum();
 
 //Storing secret number in a variable which could be used later also.
 const scr = Number(document.querySelector('.score').textContent);
@@ -59,6 +61,7 @@ document.querySelector('.check').addEventListener('click', mainFunction);
 
 //Will be invoked when 'Again' button is clicked.
 document.querySelector('.again').addEventListener('click', function () {
+  document.querySelector('.number').textContent ='?';
   score = scr;
   const guess = document.querySelector('.guess');
   const clear = document.querySelector('.again');
@@ -66,8 +69,7 @@ document.querySelector('.again').addEventListener('click', function () {
     guess.value = '';
   });
   document.querySelector('.message').textContent = 'Start guessing...';
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
-  document.querySelector('.number').textContent = '?';
+  secretNumber = secNum();
   document.querySelector('body').style.backgroundColor = 'rgb(33, 34, 33';
   document.querySelector('.score').textContent = score;
   mainFunction;
