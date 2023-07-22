@@ -17,7 +17,7 @@ let secNum =()=>{
 }
 let secretNumber=secNum();
 
-//Storing secret number in a variable which can be used later also.
+//Storing secret number in a variable which could be used later also.
 const scr = Number(document.querySelector('.score').textContent);
 let score = scr;
 let highScore = Number(document.querySelector('.highscore').textContent);
