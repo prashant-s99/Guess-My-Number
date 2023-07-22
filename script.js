@@ -15,7 +15,7 @@
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 // document.querySelector('.number').textContent = secretNumber
 
-//Storing secret number in a variable which can be used later also.
+//Storing secret number in a variable which could be used later also.
 const scr = Number(document.querySelector('.score').textContent);
 let score = scr;
 let highScore = Number(document.querySelector('.highscore').textContent);
