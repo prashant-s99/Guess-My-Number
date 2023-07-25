@@ -45,18 +45,29 @@ let mainFunction = () => {
   }
 };
 
+//Event Listener when 'Enter' key is pressed.
+document.querySelector('.guess').addEventListener("keypress", event =>{ 
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    //Trigger the button element with a click
+    document.querySelector(".check").click();
+  }
+});
+
 //Invoking main function when 'Check' button is clicked.
 document.querySelector('.check').addEventListener('click', mainFunction);
 
 //Will be invoked when 'Again' button is clicked.
 document.querySelector('.again').addEventListener('click', function () {
+  //Clearing Input field when clicked on Again button
+  document.querySelector('.again').addEventListener(
+    'click', () => document.querySelector('.guess').value = '');
+
   setNumberText('?');
   score = scr;
 
-//Clearing Input field when clicked on Again button
-  const guess = document.querySelector('.guess');
-  const clear = document.querySelector('.again');
-  clear.addEventListener('click', () => guess.value = '');
+
   showMessage('Start guessing...');
   secretNumber = secNum();
   document.querySelector('body').style.backgroundColor = 'rgb(33, 34, 33';
