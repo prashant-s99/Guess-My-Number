@@ -60,10 +60,9 @@ document.querySelector('.check').addEventListener('click', mainFunction);
 
 //Will be invoked when 'Again' button is clicked.
 document.querySelector('.again').addEventListener('click', function () {
-  //Clearing Input field when clicked on Again button
-  document.querySelector('.again').addEventListener(
-    'click', () => document.querySelector('.guess').value = '');
-
+  
+  document.querySelector('.guess').value = '';
+    
   setNumberText('?');
   score = scr;
 
