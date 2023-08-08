@@ -22,7 +22,7 @@ let mainFunction = () => {
     } else if (guess === secretNumber) {
       showMessage('Correct Number! 🥳');
       setNumberText(secretNumber);
-      document.querySelector('body').style.background = 'Green';
+      document.querySelector('body').style.background = 'linear-gradient(to top left, #19ff00, #202720)';
       if (score > highScore) {
         document.querySelector('.highscore').textContent = score;
       }
@@ -41,7 +41,7 @@ let mainFunction = () => {
     showMessage('You Lost The Game!!!');
     document.querySelector('.score').textContent = score - 1;
     setNumberText(secretNumber);
-    document.querySelector('body').style.background = 'Red';
+    document.querySelector('body').style.background = 'linear-gradient(to top left, #ff0000, #202720)';
   }
 };
 
@@ -69,7 +69,7 @@ document.querySelector('.again').addEventListener('click', function () {
 
   showMessage('Start guessing...');
   secretNumber = secNum();
-  document.querySelector('body').style.backgroundColor = 'rgb(33, 34, 33';
+  document.querySelector('body').style.background = 'linear-gradient(to top left, #6a1e52, #202720)';
   document.querySelector('.score').textContent = score;
   mainFunction;
 });
