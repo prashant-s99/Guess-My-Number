@@ -12,7 +12,7 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  background-color: rgb(33, 34, 33);
+  background: linear-gradient(to top left, #6a1e52, #202720);
 }
 
 /* LAYOUT */
