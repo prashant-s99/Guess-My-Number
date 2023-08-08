@@ -22,7 +22,7 @@ let mainFunction = () => {
     } else if (guess === secretNumber) {
       showMessage('Correct Number! 🥳');
       setNumberText(secretNumber);
-      document.querySelector('body').style.backgroundColor = 'Green';
+      document.querySelector('body').style.background = 'Green';
       if (score > highScore) {
         document.querySelector('.highscore').textContent = score;
       }
@@ -41,7 +41,7 @@ let mainFunction = () => {
     showMessage('You Lost The Game!!!');
     document.querySelector('.score').textContent = score - 1;
     setNumberText(secretNumber);
-    document.querySelector('body').style.backgroundColor = 'Red';
+    document.querySelector('body').style.background = 'Red';
   }
 };
 
